@@ -2,6 +2,12 @@ public class Main {
 
     public static void main(String[] args) {
 
+        /*
+        * 1 person has 1 wallet and 3 cards (1 Visa, 1 MC 1 Discover) –
+        * Each Card has a balance of $100 –
+        * calculate the total interest (simple interest) for this person and per card.
+        * */
+
         Card card1 = new Card("Fav Visa", "Visa", 100);
         Card card2 = new Card("Fav MC", "MC", 100);
         Card card3 = new Card("Fav Disc", "Disc", 100);
@@ -14,6 +20,13 @@ public class Main {
         Person p1 = new Person("John");
         p1.addWallet(wal1);
         p1.interestView();
+
+
+        /*
+        * 1 person has 2 wallets  Wallet 1 has a Visa and Discover , wallet 2 a MC - 
+        * each card has $100 balance -
+        * calculate the total interest(simple interest) for this person and interest per wallet
+        * */
 
         Card card4 = new Card("Fav Visa", "Visa", 100);
         Card card5 = new Card("Fav MC", "MC", 100);
@@ -30,6 +43,14 @@ public class Main {
         p2.addWallet(wal2);
         p2.addWallet(wal3);
         p2.interestView();
+
+
+        /*
+        * 2 people have 1 wallet each,  person 1 has 1 wallet ,
+        * with 2 cards MC and visa person 2 has 1 wallet – 1 visa and 1 MC - 
+        * each card has $100 balance - calculate the total interest(simple interest)
+        * for each person and interest per wallet
+        * */
 
         Card card7 = new Card("Fav Visa", "Visa", 100);
         Card card8 = new Card("Fav MC", "MC", 100);
