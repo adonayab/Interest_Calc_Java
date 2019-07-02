@@ -13,18 +13,25 @@ public class Main {
         Wallet wal1 = new Wallet("Fav Wallet");
         wal1.addCard(card1);
         wal1.addCard(card2);
-        wal1.addCard(card3);
 
         Wallet wal2 = new Wallet("Another Fav Wallet");
-        wal2.addCard(card4);
+        wal1.addCard(card3);
         wal2.addCard(card5);
-        wal2.addCard(card6);
+
+
+        Wallet wal3 = new Wallet("Cat Wallet");
+        wal3.addCard(card4);
+        wal3.addCard(card6);
 
         Person p1 = new Person("John");
         p1.addWallet(wal1);
         p1.addWallet(wal2);
 
+        Person p2 = new Person("Mark");
+        p2.addWallet(wal3);
+
         p1.interestView();
+        p2.interestView();
 
     }
 }
